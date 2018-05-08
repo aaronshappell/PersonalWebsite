@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'cv')}">
+<body>
+    <div id="page-cv" class="page">
+        <div>
+            <div class="page-header">
+                <h2>CV</h2>
+            </div>
+            <div class="page-content">
+                <div class="page-content-item">
+                    <h3><a th:href="@{/media/Aaron Shappell CV.pdf}" target="_blank">My CV</a></h3>
+                    <p>My CV is available at the link above.</p>
+                </div>
+                <div class="page-content-item">
+                    <h3><a href="https://www.linkedin.com/in/aaronshappell/" target="_blank">LinkedIn</a></h3>
+                    <p>You can also look at my LinkedIn profile for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'home')}">
+<body>
+    <div id="page-home" class="page active">
+        <div>
+            <div class="page-header">
+                <img th:src="@{/images/aaron.png}" alt="" id="profile-picture">
+                <h2>Aaron Shappell</h2>
+            </div>
+            <div class="page-content">
+                <div class="page-content-item">
+                    <p>Undergraduate student at the University of Washington, programmer, electronics enthusiast, and cat person.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

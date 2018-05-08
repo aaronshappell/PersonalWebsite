@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div th:fragment="navItem (currentPage, page, path, text)" th:id="${page}" class="nav-item" th:classappend="${page == currentPage ? 'active' : ''}">
+        <a th:href="@{${path}}" th:text="${text}"/>
+    </div>
+</body>
+</html>
