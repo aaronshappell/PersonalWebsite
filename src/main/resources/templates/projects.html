@@ -7,39 +7,12 @@
                 <h2>Projects</h2>
             </div>
             <div class="page-content">
-                <div class="page-content-item">
+                <div class="page-content-item" th:each="project : ${projects}">
                     <div class="card">
-                        <div class="card-header">SolSys - A Math-Oriented Art Puzzle</div>
+                        <div class="card-header" th:text="${project.name}"/>
                         <div class="card-content">
-                            <img th:src="@{/images/aaron.png}" alt="">
-                            <p>Meowe mewoeworehjalkdf</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-content-item">
-                    <div class="card">
-                        <div class="card-header">SolSys - A Math-Oriented Art Puzzle</div>
-                        <div class="card-content">
-                            <img th:src="@{/images/aaron.png}" alt="">
-                            <p>Meowe mewoeworehjalkdf</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-content-item">
-                    <div class="card">
-                        <div class="card-header">SolSys - A Math-Oriented Art Puzzle</div>
-                        <div class="card-content">
-                            <img th:src="@{/images/aaron.png}" alt="">
-                            <p>Meowe mewoeworehjalkdf</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-content-item">
-                    <div class="card">
-                        <div class="card-header">SolSys - A Math-Oriented Art Puzzle</div>
-                        <div class="card-content">
-                            <img th:src="@{/images/aaron.png}" alt="">
-                            <p>Meowe mewoeworehjalkdf</p>
+                            <img th:src="@{${project.image}}" alt="">
+                            <p th:text="${project.content}"/>
                         </div>
                     </div>
                 </div>

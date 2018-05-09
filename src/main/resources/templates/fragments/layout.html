@@ -10,12 +10,6 @@
 </head>
 <body>
     <div id="container-nav">
-        <!--
-        <div id="home" class="nav-item active"><a th:href="@{/}">Home</a></div>
-        <div id="projects" class="nav-item"><a th:href="@{/projects}">Projects</a></div>
-        <div id="cv" class="nav-item"><a th:href="@{/cv}">CV</a></div>
-        <div id="contact" class="nav-item"><a th:href="@{/contact}">Contact</a></div>
-        -->
         <div th:replace="fragments/navItem :: navItem (${currentPage}, 'home', '/', 'Home')"/>
         <div th:replace="fragments/navItem :: navItem (${currentPage}, 'projects', '/projects', 'Projects')"/>
         <div th:replace="fragments/navItem :: navItem (${currentPage}, 'cv', '/cv', 'CV')"/>
