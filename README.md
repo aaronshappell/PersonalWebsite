@@ -1,2 +1,2 @@
 # PersonalWebsite
-My personal website made with Kotlin and Spring Boot
+Redesign of my personal website made with Kotlin and Spring Boot
