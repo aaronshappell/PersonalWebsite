@@ -13,6 +13,6 @@ class ProjectService {
     }
 
     fun getProjects(): List<Project> {
-        return projectRepository.findAll() as List<Project>
+        return projectRepository.findAll()
     }
 }
