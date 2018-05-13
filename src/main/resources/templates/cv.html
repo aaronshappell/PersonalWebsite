@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'cv')}">
+<html xmlns:th="http://www.thymeleaf.org">
 <body>
-    <div id="page-cv" class="page">
+    <div id="page-cv" class="page" th:fragment="content">
         <div>
             <div class="page-header">
                 <h2>CV</h2>

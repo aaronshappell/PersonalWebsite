@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout (template, currentPage)">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -10,12 +10,12 @@
 </head>
 <body>
     <div id="container-nav">
-        <div th:replace="fragments/navItem :: navItem (${currentPage}, 'home', '/', 'Home')"/>
-        <div th:replace="fragments/navItem :: navItem (${currentPage}, 'projects', '/projects', 'Projects')"/>
-        <div th:replace="fragments/navItem :: navItem (${currentPage}, 'cv', '/cv', 'CV')"/>
-        <div th:replace="fragments/navItem :: navItem (${currentPage}, 'contact', '/contact', 'Contact')"/>
+        <div th:replace="fragments/navItem :: navItem (${view}, 'home', '/', 'Home')"/>
+        <div th:replace="fragments/navItem :: navItem (${view}, 'projects', '/projects', 'Projects')"/>
+        <div th:replace="fragments/navItem :: navItem (${view}, 'cv', '/cv', 'CV')"/>
+        <div th:replace="fragments/navItem :: navItem (${view}, 'contact', '/contact', 'Contact')"/>
     </div>
-    <div th:replace="${template}"/>
+    <div th:replace="${view} :: content"/>
     <div id="container-footer">
         <div id="social">
             <div class="row">

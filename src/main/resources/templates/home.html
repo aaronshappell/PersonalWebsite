@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'home')}">
+<html xmlns:th="http://www.thymeleaf.org">
 <body>
-    <div id="page-home" class="page active">
+    <div id="page-home" class="page active" th:fragment="content">
         <div>
             <div class="page-header">
                 <img th:src="@{/images/aaron.png}" alt="" id="profile-picture">
